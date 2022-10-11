@@ -2,6 +2,7 @@
 Реализация функции HAL_UART_Receive_ToIdle для FreeRTOS
 
 Инструкция по запуску:
+
 	1. add __HAL_UART_ENABLE_IT(&huart, UART_IT_IDLE); to your Init function
 	2. add prototype function in stm32xxxx_hal_uart.h:
 
@@ -17,6 +18,7 @@
   	}
 
   	4. change callback function
+	
     
 Для работы необходимо отредактировать стандартные файлы HAL драйвера
 ### ОНИ БУДУТ СЛЕТАТЬ ПРИ КАЖДОМ ПЕРЕСБОРЕ ЧЕРЕЗ CubeMX
